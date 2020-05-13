@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <title>Js - partie 7 - Exercice 3</title>
+    </head>
+    <body>
+        <!--Refaire le premier exercice en utilisant une fonction fléchée..-->
+        <label for="number1">Nombre 1 : </label>
+        <input type="number" name="number1" id="number1"/>
+        <label for="number2">Nombre 2 : </label>
+        <input type="number" name="number2" id="number2"/>
+        <button onclick="multiply(number1.value, number2.value)">Multiplier</button>
+        <p id="result"></p>
+        <script>    
+            // function multiply (a, b) {
+			// 	return alert(Number(a) * Number(b)); 
+            // }	
+            var multiply = (number1, number2) => {document.getElementById('result').innerHTML = number1 * number2;}    						
+        </script>
+    </body>
+</html>

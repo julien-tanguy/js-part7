@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <title>Js - partie 7 - Exercice 1</title>
+    </head>
+    <body>
+        <!--Écrire une fonction qui prend 2 nombres en paramètres et qui retourne le résultat de leur multiplication.
+        Créer un formulaire permettant d'entrer deux nombres. Au clic sur un bouton, lancer votre fonction.-->
+        <form>
+            <h1 id="result"></h1>
+            <div>
+                <label for="number1">Entrer le nombre 1 :</label>
+                <input type="number" id="number1" name="number1">
+            </div>
+            <div>
+                <label for="number2">Entrer le nombre 2 :</label>
+                <input type="number" id="number2" name="number2">
+            </div>
+            <button type="submit" value="multiply" id="button" onclick="multiply(document.getElementById('number1').value, document.getElementById('number2').value)">MULTIPLIER</button>
+            <div>
+                <p id="result"></p>
+            </div>
+        </form>
+        <script>    
+            function multiply (a, b) {
+				return alert(Number(a) * Number(b)); 
+            }						
+        </script>
+    </body>
+</html>
+<!--CORRECTION TONY-->
+<!-- <style>
+    ol {
+        list-style: none;
+    }
+</style>
+</head>
+<body>
+<form>
+    <ol>
+        <li><input type="number" id="number1"></li>
+        <li>X</li>
+        <li><input type="number" id="number2"></li>
+        <li><button type="button" id="resulat" name="resultat" onclick="multiplication(number1.value, number2.value)">Résultat</button></li>
+        <li><p id="resultat"></p></li>
+    </ol>
+</form>
+<script>
+    function multiplication(nb1, nb2) {
+        nb1 = Number(nb1);
+        nb2 = Number(nb2);
+        var result = nb1 * nb2;
+        document.getElementById('resultat').innerHTML = result;
+    }
+</script> -->
